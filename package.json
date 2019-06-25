@@ -1,0 +1,22 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "Movies list with MERN mongoDB, express, react, node.js",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Edwin Hoenselaar",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.0",
+    "nodemon": "^1.19.1"
+  }
+}
