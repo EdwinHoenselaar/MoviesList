@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
   newMovie.save().then(movie => res.json(movie))
 })
 
-// route DELETE api/movies
+// route DELETE api/movies/:id
 // delete an entry out of the database
 router.delete('/:id', (req, res) => {
   Movie.findById(req.params.id)
