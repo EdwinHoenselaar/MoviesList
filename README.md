@@ -11,10 +11,7 @@ Node.js
 Steps:
 1. Create a simple REST API with express and mongoose.
 2. Connect with a MongoDB Atlas db in the cloud.
-3. Create a simple client which shows the movielist.
-4. Create a form to add movies to the list.
-5. Create an EDIT funcionality to the list.
-6. Create an DELETE funcionality to the list.
+3. Create more advanced endpoints to practice mongoose and mongoDB.
 
 Future goals:
 1. connect to imdb api.
