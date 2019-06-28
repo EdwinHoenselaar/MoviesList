@@ -7,6 +7,18 @@ const MovieSchema = new Schema ({
     type: String,
     required: true
   },
+  year: {
+    type: String,
+    required: true
+  },
+  runtime :{
+    type: String,
+    required: true
+  },
+  grade: {
+    type: String,
+    required: true
+  },
   date: {
     type: Date,
     default: Date.now

@@ -8,15 +8,25 @@ const Movie = require('../../models/Movie')
 // GET all movies
 router.get('/', (req, res) => {
   Movie.find()
-    .sort({ date: -1 })
+    .sort({ title: 1 })
     .then(movies => res.json(movies))
+})
+
+// route GET api/movies/:id
+// GET one movie by id
+router.get('/:id', (req, res) => {
+  Movie.findById(req.params.id)
+    .then(movie => res.json(movie))
 })
 
 // route POST api/movies
 // Create new movie
 router.post('/', (req, res) => {
   const newMovie = new Movie({
-    title: req.body.title
+    title: req.body.title,
+    year: req.body.year,
+    runtime: req.body.runtime,
+    grade: req.body.grade
   })
   newMovie.save().then(movie => res.json(movie))
 })
